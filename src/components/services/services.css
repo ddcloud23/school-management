@@ -1,0 +1,60 @@
+
+.main {
+    display: flex;
+    width: 100%;
+    .content {
+      flex: 6;
+    }
+  }
+
+.navbar {
+    height: 77px;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    font-size: 14px;
+    color: #555;
+}
+
+.container {
+    padding: 0; /* Remove extra padding */
+}
+
+input.form-control {
+    padding-right: 35px; /* Space for the search icon */
+    background-color: white; /* Ensures input background is also white */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none; /* Prevent interaction */
+}
+
+button.btn.btn-secondary {
+    background-color: #1b6e8c;
+    border: none;
+    padding: 8px 16px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.btn.btn-secondary:hover {
+    background-color: #155a6e; /* Darker shade on hover */
+}
+
+.role-card {
+    margin-bottom: 1.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+.time-note {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 1rem;
+}
+.permissions-list {
+    margin-bottom: 0;
+}
