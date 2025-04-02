@@ -62,6 +62,10 @@ import BonusesPage from "./payslips/Bonusespage";
 import AddEditBonus from "./payslips/AddEditBonus";
 import EmployeeLoansPage from "./payslips/EmployeeLoansPage";
 import AddEditEmployeeLoan from "./payslips/AddEditEmployeeLoan";
+import ComplianceRecordsPage from "./employee/CompilanceRecordspage";
+import AddEditCompliance from "./employee/AddEditCompilance";
+import LeaveDeductionsPage from "./leaves/LeaveDeductionspage";
+import AddEditLeaveDeductions from "./leaves/AddEditLeaveDeductions";
 function App() {
   const { darkMode } = useContext(DarkModeContext);
   const [users, setUsers] = useState(userRows);
@@ -161,6 +165,11 @@ function App() {
 <Route path="add-bonus" element={<AddEditBonus />} />
 <Route path="employee-loans" element={<EmployeeLoansPage />} />
 <Route path="add-employee-loan" element={<AddEditEmployeeLoan />} />
+<Route path="compilance" element={<ComplianceRecordsPage />} />
+<Route path="add-compliance-record" element={<AddEditCompliance />} />
+<Route path="leave-deductions" element={<LeaveDeductionsPage />} />
+<Route path="add-leave-deduction" element={<AddEditLeaveDeductions/>} />
+
 
         </Routes>
       </BrowserRouter>
